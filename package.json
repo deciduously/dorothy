@@ -1,6 +1,6 @@
 {
   "name": "dorothy",
-  "version": "0.0.7",
+  "version": "0.0.7-r1",
   "description": "dorothy from Clojars, but on NPM",
   "main": "index.js",
   "repository": "https://github.com/daveray/dorothy",
