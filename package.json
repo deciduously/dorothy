@@ -1,0 +1,19 @@
+{
+  "name": "dorothy",
+  "version": "0.0.7",
+  "description": "dorothy from Clojars, but on NPM",
+  "main": "index.js",
+  "repository": "https://github.com/daveray/dorothy",
+  "license": "EPL-1.0",
+  "private": false,
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "src/*"
+  ],
+  "keywords": [
+    "cljs",
+    "cljc"
+  ]
+}
