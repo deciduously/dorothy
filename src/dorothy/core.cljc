@@ -429,7 +429,7 @@
                    [statement]))]
     (mapcat helper ss)))
 
-(defn graph
+(defn ^:export graph
   "Construct an undirected graph from the given statements which must be a vector.
   See https://github.com/daveray/dorothy or README.md for details of the DSL.
 
@@ -442,7 +442,7 @@
   ([statements]
    (graph {} statements)))
 
-(defn digraph
+(defn ^:export digraph
   "Construct a directed graph from the given statements which must be a vector.
   See https://github.com/daveray/dorothy or README.md for details of the DSL.
 
@@ -450,7 +450,7 @@
   ([attrs statements] (graph digraph* attrs statements))
   ([statements]       (digraph {} statements)))
 
-(defn subgraph
+(defn ^:export subgraph
   "Construct a sub-graph from the given statements which must be a vector.
   See https://github.com/daveray/dorothy or README.md for details of the DSL.
   A subgraph may be used as a statement in a graph, or as a node entry in
@@ -538,7 +538,7 @@
          (if id (str (escape-id id) " "))
          "{\n" (dot*-statements statements) "} ")))
 
-(defn dot
+(defn ^:export dot
   "Convert the given Dorothy graph AST to a string suitable for input to
   the Graphviz dot tool.
 
